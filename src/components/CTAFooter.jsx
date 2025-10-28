@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Instagram, Facebook } from 'lucide-react';
 import logo2 from './logo2.png';
-import logo1 from './logo.png';
+import logo1 from './logo3.png';
 
 // Color Palette
 const colors = {
@@ -16,7 +16,7 @@ const CTAFooter = () => {
   return (
     <>
       {/* CTA Section */}
-      <section className="py-16 md:py-20 lg:py-28 bg-white relative overflow-hidden">
+      <section className="py-16 md:py-20 lg:py-28 relative overflow-hidden" style={{ backgroundColor: colors.dark }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16">
           <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
             
@@ -49,8 +49,7 @@ const CTAFooter = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight px-4 lg:px-0"
-                style={{ color: colors.dark }}
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight px-4 lg:px-0 text-white"
               >
                 Vamos trabalhar juntos?
               </motion.h2>
@@ -61,8 +60,7 @@ const CTAFooter = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed px-4 lg:px-0"
-                style={{ color: colors.dark, opacity: 0.8 }}
+                className="text-base sm:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed px-4 lg:px-0 text-white opacity-90"
               >
                 Quer atrair mais clientes e expandir seu negócio? Fale com a Adamas Ads e descubra como podemos ajudar!
               </motion.p>
@@ -81,8 +79,8 @@ const CTAFooter = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-semibold text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                  style={{ backgroundColor: colors.dark }}
+                  className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white rounded-full font-semibold text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                  style={{ color: colors.dark }}
                 >
                   <motion.div
                     className="absolute inset-0"

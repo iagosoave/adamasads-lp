@@ -81,10 +81,10 @@ const CTA = () => {
       </section>
 
       {/* Mobile Version */}
-      <section className="lg:hidden relative overflow-hidden">
-        {/* CTA Content on top with blue background */}
-        <div className="relative py-16" style={{ backgroundColor: '#0d3559' }}>
-          <div className="max-w-2xl mx-auto px-4 sm:px-6">
+      <section className="lg:hidden relative">
+        {/* CTA Content with blue background */}
+        <div className="relative py-12 px-4 sm:px-6 pb-0" style={{ backgroundColor: '#0d3559' }}>
+          <div className="max-w-2xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight"
+                className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight"
               >
                 Seu investimento precisa gerar resultados
               </motion.h2>
@@ -109,7 +109,7 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-base sm:text-lg text-white/90 mb-8 leading-relaxed"
+                className="text-sm sm:text-base text-white/90 mb-6 leading-relaxed"
               >
                 Investir sem estratégia é desperdício. Nosso foco é trabalhar para que seu investimento gere previsibilidade e crescimento real.
               </motion.p>
@@ -120,7 +120,7 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex justify-center"
+                className="flex justify-center mb-8"
               >
                 <motion.a
                   href="https://api.whatsapp.com/send?phone=5527992980166&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20tenho%20interesse%20nos%20servi%C3%A7os%20da%20Adamas"
@@ -128,7 +128,7 @@ const CTA = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white rounded-full font-semibold text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="relative inline-flex items-center gap-2 px-6 py-3 bg-white rounded-full font-semibold text-sm overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                   style={{ color: '#0d3559' }}
                 >
                   <motion.div
@@ -138,19 +138,26 @@ const CTA = () => {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                   />
                   <span className="relative z-10">ENTRE EM CONTATO</span>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform duration-300" />
+                  <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300" />
                 </motion.a>
+              </motion.div>
+
+              {/* Image grudada no final */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="flex justify-center -mb-1"
+              >
+                <img 
+                  src={mobileImage} 
+                  alt="CTA Mobile" 
+                  className="w-full max-w-md h-auto"
+                />
               </motion.div>
             </motion.div>
           </div>
-        </div>
-
-        {/* Image on bottom */}
-        <div className="relative min-h-[300px] sm:min-h-[400px]">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${mobileImage})` }}
-          />
         </div>
       </section>
     </>

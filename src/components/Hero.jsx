@@ -40,10 +40,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-3xl sm:text-4xl font-bold mb-6 leading-tight tracking-tight"
+              className="text-2xl sm:text-3xl font-bold mb-6 leading-tight tracking-tight"
             >
-              <span className="text-[#1e3557]">Transformamos Dados</span>
-              <br />
+              <span className="text-[#1e3557] block">Transformamos Dados</span>
               <span className="text-[#1e3557]">em </span>
               <span className="text-[#70adcd]">Resultados</span>
             </motion.h1>
@@ -141,10 +140,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-7 leading-[1.15] tracking-tight"
+            className="text-4xl md:text-5xl lg:text-5xl font-bold mb-7 leading-[1.15] tracking-tight"
           >
-            <span className="text-[#1e3557]">Transformamos Dados</span>
-            <br />
+            <span className="text-[#1e3557] block">Transformamos Dados</span>
             <span className="text-[#1e3557]">em </span>
             <span className="text-[#70adcd]">Resultados</span>
           </motion.h1>
