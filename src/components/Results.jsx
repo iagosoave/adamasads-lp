@@ -5,7 +5,8 @@ import {
   Laptop, 
   Stethoscope, 
   BookOpen, 
-  Home
+  Home,
+  Store // Ícone adicionado
 } from 'lucide-react';
 
 // Color Palette
@@ -26,6 +27,7 @@ const ResultsSection = () => {
     { icon: Stethoscope, text: 'Saúde & Estética' },
     { icon: BookOpen, text: 'Educação' },
     { icon: Home, text: 'Imobiliário' },
+    { icon: Store, text: 'Negócios Locais' }, // Card adicionado
   ];
 
   const stats = [
@@ -80,7 +82,7 @@ const ResultsSection = () => {
 
         {/* Expertise Grid */}
         <motion.div 
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-24 md:mb-32 max-w-5xl mx-auto"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 mb-24 md:mb-32 max-w-5xl mx-auto" // Grid atualizado para 6 colunas em 'lg'
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
