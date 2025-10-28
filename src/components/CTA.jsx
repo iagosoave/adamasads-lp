@@ -83,7 +83,7 @@ const CTA = () => {
       {/* Mobile Version */}
       <section className="lg:hidden relative overflow-hidden">
         {/* CTA Content on top with blue background */}
-        <div className="relative bg-[#001f4a] py-16">
+        <div className="relative py-16" style={{ backgroundColor: '#0d3559' }}>
           <div className="max-w-2xl mx-auto px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -128,7 +128,8 @@ const CTA = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#001f4a] rounded-full font-semibold text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white rounded-full font-semibold text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  style={{ color: '#0d3559' }}
                 >
                   <motion.div
                     className="absolute inset-0 bg-[#70adcd]"
