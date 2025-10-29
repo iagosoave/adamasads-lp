@@ -57,23 +57,15 @@ const CTA = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="flex justify-start"
               >
-                <motion.a
+                <a
                   href="https://api.whatsapp.com/send?phone=5527992980166&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20tenho%20interesse%20nos%20servi%C3%A7os%20da%20Adamas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#1e3557] rounded-full font-semibold text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white hover:bg-[#70adcd] text-[#1e3557] hover:text-white rounded-full font-semibold text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <motion.div
-                    className="absolute inset-0 bg-[#70adcd]"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: 0 }}
-                    transition={{ duration: 0.4, ease: "easeOut" }}
-                  />
-                  <span className="relative z-10">ENTRE EM CONTATO</span>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform duration-300" />
-                </motion.a>
+                  <span>ENTRE EM CONTATO</span>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                </a>
               </motion.div>
             </motion.div>
           </div>
@@ -82,9 +74,8 @@ const CTA = () => {
 
       {/* Mobile Version */}
       <section className="lg:hidden relative">
-        {/* CTA Content with blue background */}
-        <div className="relative py-12 px-4 sm:px-6 pb-0" style={{ backgroundColor: '#0d3559' }}>
-          <div className="max-w-2xl mx-auto">
+        <div className="relative py-8 px-4 pb-0" style={{ backgroundColor: '#0d3559' }}>
+          <div className="w-full mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +89,7 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight"
+                className="text-2xl font-bold text-white mb-4 leading-tight px-2"
               >
                 Seu investimento precisa gerar resultados
               </motion.h2>
@@ -109,7 +100,7 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-sm sm:text-base text-white/90 mb-6 leading-relaxed"
+                className="text-sm text-white/90 mb-6 leading-relaxed px-2"
               >
                 Investir sem estratégia é desperdício. Nosso foco é trabalhar para que seu investimento gere previsibilidade e crescimento real.
               </motion.p>
@@ -120,26 +111,17 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex justify-center mb-8"
+                className="flex justify-center mb-2 px-2"
               >
-                <motion.a
+                <a
                   href="https://api.whatsapp.com/send?phone=5527992980166&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20tenho%20interesse%20nos%20servi%C3%A7os%20da%20Adamas"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="relative inline-flex items-center gap-2 px-6 py-3 bg-white rounded-full font-semibold text-sm overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-                  style={{ color: '#0d3559' }}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-[#70adcd] text-[#0d3559] hover:text-white rounded-full font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <motion.div
-                    className="absolute inset-0 bg-[#70adcd]"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: 0 }}
-                    transition={{ duration: 0.4, ease: "easeOut" }}
-                  />
-                  <span className="relative z-10">ENTRE EM CONTATO</span>
-                  <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300" />
-                </motion.a>
+                  <span>ENTRE EM CONTATO</span>
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                </a>
               </motion.div>
 
               {/* Image grudada no final */}
@@ -148,12 +130,12 @@ const CTA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.3 }}
-                className="flex justify-center -mb-1"
+                className="w-full flex justify-center -mb-1 mt-4"
               >
                 <img 
                   src={mobileImage} 
                   alt="CTA Mobile" 
-                  className="w-full max-w-md h-auto"
+                  className="w-full h-auto object-contain"
                 />
               </motion.div>
             </motion.div>
