@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Mobile Layout */}
       <section className="lg:hidden relative" style={{ backgroundColor: '#1e3557' }}>
         {/* CTA Content with blue background */}
-        <div className="relative py-12 px-4 sm:px-6 pb-0">
+        <div className="relative py-12 px-4 sm:px-6 pb-0" style={{ marginLeft: '3px' }}>
           <div className="max-w-2xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -49,8 +49,7 @@ const Hero = () => {
                 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight px-2"
               >
                 <span className="text-white block">Transformamos Dados</span>
-                <span className="text-white">em </span>
-                <span className="text-white">Resultados</span>
+                <span className="text-white block">em Resultados</span>
               </motion.h1>
 
               {/* Subtitle */}
